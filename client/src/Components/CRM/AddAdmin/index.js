@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import { makeStyles }  from '@material-ui/core/styles';
 import { useToast } from '@chakra-ui/react';
 import Paper from '@material-ui/core/Paper';
@@ -7,9 +7,8 @@ import DialogActions from '@material-ui/core/DialogActions';
 import TextField from '@material-ui/core/TextField';
 import InputLabel from '@material-ui/core/Inputlabel';
 import axios from 'axios';
-
+import Typography from "@material-ui/core/Typography";
 import { decodeSessionStorage } from '../../../helpers/auth.helpers';
-import Loading from '../../Loading';
 
 const useStyles = makeStyles((theme) => ({
     userTable: {
@@ -110,7 +109,7 @@ function AddAdmin() {
     }
 
   return (
-    <Paper elevation={3} style={{width: "60%", height: 'max-content', padding: '30px 30px 30px 30px'}} className={classes.userTable}>
+    <Paper  elevation={3} style={{width: "60%", height: 'max-content', padding: '30px 30px 30px 30px'}} className={classes.userTable}>
         <form onSubmit={adduser}>
                 <div className={classes.name}>
                     <TextField 

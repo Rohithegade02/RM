@@ -254,6 +254,135 @@ module.exports = [
 
 
        
+   ],
+   [
+       'crp',
+       'crpid INT NOT NULL AUTO_INCREMENT PRIMARY KEY,'
+       +'sl_no VARCHAR(255) NOT NULL,'
+       +'date_of_cash_gen VARCHAR(255) NOT NULL,'
+       +'cash VARCHAR(255) NOT NULL,'
+       +'vchs VARCHAR(255) NOT NULL,'
+       +'date_of_remitance VARCHAR(255) NOT NULL,'
+       +'amount_remitance VARCHAR(255) NOT NULL,'
+       +'hcl_no VARCHAR(255) NOT NULL,'
+       +'sbi_challan VARCHAR(255) NOT NULL,'
+       +'cash_rly VARCHAR(255) NOT NULL,'
+       +'cash_rad VARCHAR(255) NOT NULL,'
+       +'cr_note VARCHAR(255) NOT NULL,'
+       +'date_of_dispatch VARCHAR(255) NOT NULL,'
+       +'cr_note_ack VARCHAR(255) NOT NULL,'
+       +'oname VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (registerid) REFERENCES Registers(regid),'
+       +'registerid VARCHAR(255) NOT NULL,'
+       +'scode VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (scode) REFERENCES station(scode)'
+   ],
+   [
+       'mvr',
+       'mvrid INT NOT NULL AUTO_INCREMENT PRIMARY KEY,'
+       +'sl_no VARCHAR(255) NOT NULL,'
+       +'frm VARCHAR(255) NOT NULL,'
+       +'too VARCHAR(255) NOT NULL,'
+       +'commencing_date VARCHAR(255) NOT NULL,'
+       +'issue_to VARCHAR(255) NOT NULL,'
+       +'closing_date VARCHAR(255) NOT NULL,'
+       +'oname VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (registerid) REFERENCES Registers(regid),'
+       +'registerid VARCHAR(255) NOT NULL,'
+       +'scode VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (scode) REFERENCES station(scode)'
+       
+   ],
+   [
+       'trr',
+       'trrid INT NOT NULL AUTO_INCREMENT PRIMARY KEY,'
+       +'sl_no VARCHAR(255) NOT NULL,'
+       +'rollno VARCHAR(255) NOT NULL,'
+       +'commencing_number VARCHAR(255) NOT NULL,'
+       +'closing_number VARCHAR(255) NOT NULL,'
+       +'counter_no VARCHAR(255) NOT NULL,'
+       +'date VARCHAR(255) NOT NULL,'
+       +'userid VARCHAR(255) NOT NULL,'
+       +'supervisor_id VARCHAR(255) NOT NULL,'
+       +'oname VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (registerid) REFERENCES Registers(regid),'
+       +'registerid VARCHAR(255) NOT NULL,'
+       +'scode VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (scode) REFERENCES station(scode)'
+   ],
+   [
+       'atvm',
+       'atvmid INT NOT NULL AUTO_INCREMENT PRIMARY KEY,'
+       +'sl_no VARCHAR(255) NOT NULL,'
+       +'rollno VARCHAR(255) NOT NULL,'
+       +'commencing_number VARCHAR(255) NOT NULL,'
+       +'closing_number VARCHAR(255) NOT NULL,'
+       +'counter_no VARCHAR(255) NOT NULL,'
+       +'date VARCHAR(255) NOT NULL,'
+       +'userid VARCHAR(255) NOT NULL,'
+       +'supervisor_id VARCHAR(255) NOT NULL,'
+       +'oname VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (registerid) REFERENCES Registers(regid),'
+       +'registerid VARCHAR(255) NOT NULL,'
+       +'scode VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (scode) REFERENCES station(scode)'
+   ],
+   [
+       'ear',
+       'earid INT NOT NULL AUTO_INCREMENT PRIMARY KEY,'
+       +'sl_no VARCHAR(255) NOT NULL,'
+       +'error_sheet_no VARCHAR(255) NOT NULL,'
+       +'total_amount VARCHAR(255) NOT NULL,'
+       +'special_credit  VARCHAR(255) NOT NULL,'
+       +'amount_paid VARCHAR(255) NOT NULL,'
+       +'name_of_staff VARCHAR(255) NOT NULL,'
+       +'money_receipt VARCHAR(255) NOT NULL,'
+       +'date VARCHAR(255) NOT NULL,'
+       +'remarks VARCHAR(255) NOT NULL,'
+       +'oname VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (registerid) REFERENCES Registers(regid),'
+       +'registerid VARCHAR(255) NOT NULL,'
+       +'scode VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (scode) REFERENCES station(scode)'
+   ],
+   [
+       'gbr',
+       'gbrid INT NOT NULL AUTO_INCREMENT PRIMARY KEY,'
+       +'sl_no VARCHAR(255) NOT NULL,'
+       +'date VARCHAR(255) NOT NULL,'
+       +'address VARCHAR(255) NOT NULL,'
+       +'trainno VARCHAR(255) NOT NULL,'
+       +'date_of_journey VARCHAR(255) NOT NULL,'
+       +'frm VARCHAR(255) NOT NULL,'
+       +'too VARCHAR(255) NOT NULL,'
+       +'noofpass VARCHAR(255) NOT NULL,'
+       +'class_of_journey VARCHAR(255) NOT NULL,'
+       +'journey_purpose VARCHAR(255) NOT NULL,'
+       +'authority VARCHAR(255) NOT NULL,'
+       +'oname VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (registerid) REFERENCES Registers(regid),'
+       +'registerid VARCHAR(255) NOT NULL,'
+       +'scode VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (scode) REFERENCES station(scode)'
+
+   ],
+   [
+       'ptrr',
+       'ptrrid INT NOT NULL AUTO_INCREMENT PRIMARY KEY,'
+       +'sl_no VARCHAR(255) NOT NULL,'
+       +'commencing_number VARCHAR(255) NOT NULL,'
+       +'closing_number VARCHAR(255) NOT NULL,'
+       +'user_id VARCHAR(255) NOT NULL,'
+       +'commencing_date VARCHAR(255) NOT NULL,'
+       +'terminal VARCHAR(255) NOT NULL,'
+       +'closing_user_id VARCHAR(255) NOT NULL,'
+       +'closing_date VARCHAR(255) NOT NULL,'
+       +'oname VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (registerid) REFERENCES Registers(regid),'
+       +'registerid VARCHAR(255) NOT NULL,'
+       +'scode VARCHAR(255) NOT NULL,'
+       +'FOREIGN KEY (scode) REFERENCES station(scode)'
    ]
+
    
 ]

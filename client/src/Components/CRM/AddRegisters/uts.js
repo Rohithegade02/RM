@@ -8,7 +8,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import { GrAdd } from 'react-icons/gr'
 import { decodeSessionStorage } from '../../../helpers/auth.helpers';
-import { FrUTSForm, LogUTSForm,  MmrUTSForm, NitUTSForm , PcdUTSForm,SctUTSForm, TsiUTSForm} from './registersList'
+import { AtvmUTSForm, CrpUTSForm, EarUTSForm, FrUTSForm, LogUTSForm,  MmrUTSForm, MvrUTSForm, NitUTSForm , PcdUTSForm,SctUTSForm, TrrUTSForm, TsiUTSForm} from './registersList'
 
 function UTS({oname}){
     const userData = decodeSessionStorage().payload;
@@ -60,13 +60,13 @@ function UTS({oname}){
         <MaterialTable
                     title="Registers"
                     columns={[
-                        { title: 'Register Name', field: 'regname', cellStyle: {textAlign: 'center'}, headerStyle: {textAlign: 'center'} },
+                        { title: 'Register Name', field: 'regname', cellStyle: {textAlign: 'center',fontSize:'22px',fontWeight:'bold'}, headerStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold',color:'#05227B'} },
                         {
-                            title: 'View',
+                            title: 'Add',
                             field: 'internal_action',
-                            cellStyle: {textAlign: 'center'},
+                            cellStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold'},
                             sorting: false,
-                            headerStyle: {textAlign: 'center'},
+                            headerStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold',color:'#05227B'},
                             render: (rowData) =>
                                 rowData && (
                                 <button
@@ -100,6 +100,11 @@ function UTS({oname}){
                     { selectedRegister && selectedRegister.regid === '9' ? <MmrUTSForm oname={oname} /> : null}
                     { selectedRegister && selectedRegister.regid === '11' ? <FrUTSForm oname={oname} /> : null}
                     { selectedRegister && selectedRegister.regid === '13' ? <TsiUTSForm oname={oname} /> : null}
+                    { selectedRegister && selectedRegister.regid === '18' ? <CrpUTSForm oname={oname} /> : null}
+                    { selectedRegister && selectedRegister.regid === '19' ? <MvrUTSForm oname={oname} /> : null}
+                    { selectedRegister && selectedRegister.regid === '20' ? <TrrUTSForm oname={oname} /> : null}
+                    { selectedRegister && selectedRegister.regid === '21' ? <AtvmUTSForm oname={oname} /> : null}
+                    { selectedRegister && selectedRegister.regid === '22' ? <EarUTSForm oname={oname} /> : null}
                 </DialogContent>
             </Dialog>
         </div>

@@ -3,13 +3,12 @@ import MaterialTable from 'material-table'
 import axios from 'axios'
 import Icon from '@material-ui/core/Icon';
 import { useToast } from '@chakra-ui/react';
-import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import { GrFormView } from 'react-icons/gr'
 import { decodeSessionStorage } from '../../../helpers/auth.helpers';
-import { FrTable, LogTable, MmrTable, NitTable, PcdTable, SctTable, TsiTable } from './registersList'
+import { AtvmTable, CrpTable, EarTable, FrTable, LogTable, MmrTable, MvrTable, NitTable, PcdTable, SctTable, TrrTable, TsiTable } from './registersList'
 
 function UTS({oname}){
     const userData = decodeSessionStorage().payload;
@@ -63,13 +62,13 @@ function UTS({oname}){
         <MaterialTable
                     title="Registers"
                     columns={[
-                        { title: 'Register Name', field: 'regname', cellStyle: {textAlign: 'center'}, headerStyle: {textAlign: 'center'} },
+                        { title: 'Register Name ', field: 'regname', cellStyle: {textAlign: 'center',fontSize:'22px',fontWeight:'bold'} , headerStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold',color:'#05227B'} },
                         {
                             title: 'View',
                             field: 'internal_action',
-                            cellStyle: {textAlign: 'center'},
+                            cellStyle: {textAlign: 'center',fontSize:'22px',fontWeight:'bold'},
                             sorting: false,
-                            headerStyle: {textAlign: 'center'},
+                            headerStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold',color:'#05227B'},
                             render: (rowData) =>
                                 rowData && (
                                 <button
@@ -103,6 +102,11 @@ function UTS({oname}){
                     { selectedRegister && selectedRegister.regid === '9' ? <MmrTable update={update} setUpdate={setUpdate} data={registerLogs} /> : null}
                     { selectedRegister && selectedRegister.regid === '11' ? <FrTable update={update} setUpdate={setUpdate} data={registerLogs} /> : null}
                     { selectedRegister && selectedRegister.regid === '13' ? <TsiTable update={update} setUpdate={setUpdate} data={registerLogs} /> : null}
+                    { selectedRegister && selectedRegister.regid === '18' ? <CrpTable update={update} setUpdate={setUpdate} data={registerLogs} /> : null}
+                    { selectedRegister && selectedRegister.regid === '19' ? <MvrTable update={update} setUpdate={setUpdate} data={registerLogs} /> : null}
+                    {selectedRegister && selectedRegister.regid === '20' ? <TrrTable update={update} setUpdate={setUpdate} data={registerLogs} /> : null}
+                    {selectedRegister && selectedRegister.regid === '21' ? <AtvmTable update={update} setUpdate={setUpdate} data={registerLogs} /> : null}
+                    {selectedRegister && selectedRegister.regid === '22' ? <EarTable update={update} setUpdate={setUpdate} data={registerLogs} /> : null}
                 </DialogContent>
             </Dialog>
         </div>

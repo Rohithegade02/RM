@@ -484,6 +484,208 @@ exports.addBbrRegisters=(req,res)=>{
         })
     })
 }
+exports.addCrpRegisters=(req,res)=>{
+    const { 
+        tableName,
+		slno,
+        dog,
+        oname, 
+        cash,
+		vchs,
+		dor,
+		amt,
+		hcl,
+		sbi,
+		rly,
+		rad,
+		crnote,
+        dod,
+        ack,
+        scode,
+        registerid
+    } = req.body;
+   
+    add_registers = `insert into railways.${tableName} (sl_no,date_of_cash_gen,cash,vchs,date_of_remitance,amount_remitance,hcl_no,sbi_challan,cash_rly,cash_rad,cr_note,date_of_dispatch,cr_note_ack,oname, registerid, scode) values ( '${slno}','${dog}', '${cash}', '${vchs}', '${dor}', '${amt}', '${hcl}', '${sbi}', '${rly}','${rad}','${crnote}','${dod}','${ack}', '${oname}', '${registerid}', '${scode}')`   
+
+    connect.query(add_registers, function(err, result) {
+        if (err) {
+            console.log(err)
+            return res.status(500).json({
+                message: "Error in Adding registers"
+
+            })
+        }
+        return res.status(200).json({
+            message: "Added registers!", 
+            logs: result
+        })
+    })
+}
+
+
+exports.addMvrRegisters=(req,res)=>{
+    const { 
+        tableName,
+		slno,
+        frm,
+        oname, 
+        too,
+		commencingdate,
+		issue,
+		closingdate,
+        scode,
+        registerid
+    } = req.body;
+   
+    add_registers = `insert into railways.${tableName} (sl_no,frm,too,commencing_date,issue_to,closing_date,oname, registerid, scode) values ( '${slno}','${frm}', '${too}', '${commencingdate}', '${issue}', '${closingdate}',  '${oname}', '${registerid}', '${scode}')`   
+
+    connect.query(add_registers, function(err, result) {
+        if (err) {
+            console.log(err)
+            return res.status(500).json({
+                message: "Error in Adding registers"
+
+            })
+        }
+        return res.status(200).json({
+            message: "Added registers!", 
+            logs: result
+        })
+    })
+}
+
+exports.addTrrRegisters=(req,res)=>{
+    const { 
+        tableName,
+		slno,
+        oname, 
+        rollno,
+        commencingnumber,
+        closingnumber,
+        counterno,
+        date,
+        user,
+        supervisorid,
+        scode,
+        registerid
+    } = req.body;
+   
+    add_registers = `insert into railways.${tableName} (sl_no,rollno,commencing_number,closing_number,counter_no,date,userid,supervisor_id,oname, registerid, scode) values ( '${slno}','${rollno}', '${commencingnumber}', '${closingnumber}', '${counterno}', '${date}','${user}', '${supervisorid}',  '${oname}', '${registerid}', '${scode}')`   
+
+    connect.query(add_registers, function(err, result) {
+        if (err) {
+            console.log(err)
+            return res.status(500).json({
+                message: "Error in Adding registers"
+
+            })
+        }
+        return res.status(200).json({
+            message: "Added registers!", 
+            logs: result
+        })
+    })
+}
+exports.addAtvmRegisters=(req,res)=>{
+    const { 
+        tableName,
+		slno,
+        oname, 
+        rollno,
+        commencingnumber,
+        closingnumber,
+        counterno,
+        date,
+        user,
+        supervisorid,
+        scode,
+        registerid
+    } = req.body;
+   
+    add_registers = `insert into railways.${tableName} (sl_no,rollno,commencing_number,closing_number,counter_no,date,userid,supervisor_id,oname, registerid, scode) values ( '${slno}','${rollno}', '${commencingnumber}', '${closingnumber}', '${counterno}', '${date}','${user}', '${supervisorid}',  '${oname}', '${registerid}', '${scode}')`   
+
+    connect.query(add_registers, function(err, result) {
+        if (err) {
+            console.log(err)
+            return res.status(500).json({
+                message: "Error in Adding registers"
+
+            })
+        }
+        return res.status(200).json({
+            message: "Added registers!", 
+            logs: result
+        })
+    })
+}
+exports.addGbrRegisters=(req,res)=>{
+    const { 
+        tableName,
+		slno,
+        oname, 
+        frm,
+        too,
+        dates,
+        address,
+        trainno,
+        doj,
+        noofpass,
+        classs,
+        purpose,
+        authority,
+        scode,
+        registerid
+    } = req.body;
+   
+    add_registers = `insert into railways.${tableName} (sl_no,date,address,trainno,date_of_journey,frm,too,noofpass,class_of_journey,journey_purpose,authority,oname, registerid, scode) values ( '${slno}','${dates}', '${address}', '${trainno}', '${doj}', '${frm}','${too}', '${noofpass}','${classs}','${purpose}','${authority}',  '${oname}', '${registerid}', '${scode}')`   
+
+    connect.query(add_registers, function(err, result) {
+        if (err) {
+            console.log(err)
+            return res.status(500).json({
+                message: "Error in Adding registers"
+
+            })
+        }
+        return res.status(200).json({
+            message: "Added registers!", 
+            logs: result
+        })
+    })
+}
+exports.addEarRegisters=(req,res)=>{
+    const { 
+        tableName,
+		slno,
+        oname, 
+        errorsheetno,
+        totalamount,
+        specialcredit,
+        amountpaid,
+        nameofstaff,
+        moneyreceipt,
+        date,
+        remarks,
+        scode,
+        registerid
+    } = req.body;
+   
+    add_registers = `insert into railways.${tableName} (sl_no,error_sheet_no,total_amount,special_credit,amount_paid,name_of_staff,money_receipt,date,remarks,oname, registerid, scode) values ( '${slno}','${errorsheetno}', '${totalamount}', '${specialcredit}', '${amountpaid}', '${nameofstaff}','${moneyreceipt}', '${date}', '${remarks}', '${oname}', '${registerid}', '${scode}')`   
+
+    connect.query(add_registers, function(err, result) {
+        if (err) {
+            console.log(err)
+            return res.status(500).json({
+                message: "Error in Adding registers"
+
+            })
+        }
+        return res.status(200).json({
+            message: "Added registers!", 
+            logs: result
+        })
+    })
+}
 
 exports.registerDeleteController = (req, res) => {
 
@@ -516,7 +718,21 @@ exports.registerPcdDeleteController = (req, res) => {
         })
     })
 }
+exports.registerGbrDeleteController = (req, res) => {
 
+    const { gbrid, tableName } = req.body;
+    register_delete = `delete from railways.${tableName} where gbrid='${gbrid}'`;
+    connect.query(register_delete, function(err, result) {
+        if (err) {
+            return res.status(500).json({
+                message: "Error in Deleting register"
+            })
+        }
+        return res.status(200).json({
+            message: "Register Deleted!"
+        })
+    })
+}
 exports.registerNitDeleteController = (req, res) => {
 
     const { nitid, tableName } = req.body;
@@ -611,7 +827,81 @@ exports.registerBbrDeleteController = (req, res) => {
         })
     })
 }
+exports.registerCrpDeleteController = (req, res) => {
 
+    const { crpid, tableName } = req.body;
+    register_delete = `delete from railways.${tableName} where crpid='${crpid}'`;
+    connect.query(register_delete, function(err, result) {
+        if (err) {
+            return res.status(500).json({
+                message: "Error in Deleting register"
+            })
+        }
+        return res.status(200).json({
+            message: "Register Deleted!"
+        })
+    })
+}
+exports.registerMvrDeleteController = (req, res) => {
+
+    const { mvrid, tableName } = req.body;
+    register_delete = `delete from railways.${tableName} where mvrid='${mvrid}'`;
+    connect.query(register_delete, function(err, result) {
+        if (err) {
+            return res.status(500).json({
+                message: "Error in Deleting register"
+            })
+        }
+        return res.status(200).json({
+            message: "Register Deleted!"
+        })
+    })
+}
+exports.registerTrrDeleteController = (req, res) => {
+
+    const { trrid, tableName } = req.body;
+    register_delete = `delete from railways.${tableName} where trrid='${trrid}'`;
+    connect.query(register_delete, function(err, result) {
+        if (err) {
+            return res.status(500).json({
+                message: "Error in Deleting register"
+            })
+        }
+        return res.status(200).json({
+            message: "Register Deleted!"
+        })
+    })
+}
+exports.registerAtvmDeleteController = (req, res) => {
+
+    const { atvmid, tableName } = req.body;
+    register_delete = `delete from railways.${tableName} where atvmid='${atvmid}'`;
+    connect.query(register_delete, function(err, result) {
+        if (err) {
+            return res.status(500).json({
+                message: "Error in Deleting register"
+            })
+        }
+        return res.status(200).json({
+            message: "Register Deleted!"
+        })
+    })
+}
+exports.registerEarDeleteController = (req, res) => {
+
+    const { earid, tableName } = req.body;
+    register_delete = `delete from railways.${tableName} where earid='${earid}'`;
+    connect.query(register_delete, function(err, result) {
+        if (err) {
+            return res.status(500).json({
+                message: "Error in Deleting register"
+            })
+        }
+        return res.status(200).json({
+            message: "Register Deleted!"
+        })
+    })
+}
 exports.registerNcrDeleteController = (req, res) => {
 
     const { ncrid, tableName } = req.body;

@@ -25,8 +25,6 @@ export const LogForm = ({oname}) => {
     const [pos,setPos]=useState()
     const [ecash,setEcash]=useState()
     const [ubi,setUbi]=useState()
-    const [gtotal,setGtotal]=useState()
-    const [partroll,setPartroll]=useState()
     const [toc,setToc]=useState()
     const loginTime = JSON.parse(localStorage.getItem('loginTime'))
     const userid = userData.sid
@@ -34,8 +32,7 @@ export const LogForm = ({oname}) => {
     const scode = userData.scd
     const logoutTime = moment().format('YYYY-MM-DD hh:mm:ss')
     const registerid = 2
-    console.log(oname) 
-    console.log(userData)
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -229,8 +226,6 @@ export const LogUTSForm = ({oname}) => {
     const [pos,setPos]=useState()
     const [ecash,setEcash]=useState()
     const [ubi,setUbi]=useState()
-    const [gtotal,setGtotal]=useState()
-    const [partroll,setPartroll]=useState()
     const [toc,setToc]=useState()
     const loginTime = JSON.parse(localStorage.getItem('loginTime'))
     const userid = userData.sid
@@ -238,8 +233,7 @@ export const LogUTSForm = ({oname}) => {
     const scode = userData.scd
     const logoutTime = moment().format('YYYY-MM-DD hh:mm:ss')
     const registerid = 1
-    console.log(oname) 
-    console.log(userData)
+   
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -435,8 +429,7 @@ export const PcdForm=({oname}) => {
     const date = moment().format('YYYY-MM-DD')
     const scode = userData.scd
     const registerid = 3
-    console.log(oname) 
-    console.log(userData)
+   
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -592,8 +585,7 @@ export const PcdUTSForm=({oname}) => {
     const date = moment().format('YYYY-MM-DD')
     const scode = userData.scd
     const registerid = 4
-    console.log(oname) 
-    console.log(userData)
+   
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -750,8 +742,7 @@ export const NitForm=({oname}) => {
     const date = moment().format('YYYY-MM-DD')
     const scode = userData.scd
     const registerid = 6
-    console.log(oname) 
-    console.log(userData)
+ 
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -913,8 +904,7 @@ export const NitUTSForm=({oname}) => {
     const date = moment().format('YYYY-MM-DD')
     const scode = userData.scd
     const registerid = 5
-    console.log(oname) 
-    console.log(userData)
+   
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -1069,8 +1059,7 @@ export const MmrForm=({oname}) => {
     const date = moment().format('YYYY-MM-DD')
     const scode = userData.scd
     const registerid = 10
-    console.log(oname) 
-    console.log(userData)
+ 
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -1186,8 +1175,7 @@ export const MmrUTSForm=({oname}) => {
     const date = moment().format('YYYY-MM-DD')
     const scode = userData.scd
     const registerid = 9
-    console.log(oname) 
-    console.log(userData)
+ 
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -1304,8 +1292,7 @@ export const TsiForm=({oname}) => {
     const date = moment().format('YYYY-MM-DD')
     const scode = userData.scd
     const registerid = 14
-    console.log(oname) 
-    console.log(userData)
+   
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -1410,8 +1397,7 @@ export const TsiUTSForm=({oname}) => {
     const date = moment().format('YYYY-MM-DD')
     const scode = userData.scd
     const registerid = 13
-    console.log(oname) 
-    console.log(userData)
+   
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -1516,8 +1502,7 @@ export const NcrForm=({oname}) => {
     const date = moment().format('YYYY-MM-DD')
     const scode = userData.scd
     const registerid = 16
-    console.log(oname) 
-    console.log(userData)
+  
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -1618,8 +1603,7 @@ export const WleForm=({oname}) => {
     const date = moment().format('YYYY-MM-DD')
     const scode = userData.scd
     const registerid = 17
-    console.log(oname) 
-    console.log(userData)
+  
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -1738,8 +1722,7 @@ export const SctUTSForm=({oname}) => {
     const date = moment().format('YYYY-MM-DD')
     const scode = userData.scd
     const registerid = 7
-    console.log(oname) 
-    console.log(userData)
+  
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -1898,8 +1881,7 @@ export const SctForm=({oname}) => {
     const date = moment().format('YYYY-MM-DD')
     const scode = userData.scd
     const registerid = 8
-    console.log(oname) 
-    console.log(userData)
+   
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -2065,8 +2047,7 @@ export const FrForm=({oname}) => {
     const userid = userData.sid
     const scode = userData.scd
     const registerid = 12
-    console.log(oname) 
-    console.log(userData)
+  
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -2213,8 +2194,7 @@ export const FrUTSForm=({oname}) => {
     const userid = userData.sid
     const scode = userData.scd
     const registerid = 11
-    console.log(oname) 
-    console.log(userData)
+  
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -2364,9 +2344,7 @@ export const BbrForm=({oname}) => {
     const userid = userData.sid
     const scode = userData.scd
     const registerid = 15
-    console.log(oname) 
-    console.log(userData)
-
+  
     const handleSubmit = (e) => {
         e.preventDefault()
         axios.post(`${process.env.REACT_APP_CONFIG}/addBbrRegisters`, {
@@ -2504,3 +2482,1013 @@ export const BbrForm=({oname}) => {
         </form>
     )
 }
+
+export const CrpUTSForm=({oname}) => {
+    const toast = useToast()
+    const userData = decodeSessionStorage().payload;
+    const tableName = 'crp'
+    const[slno,setSlno]=useState()
+    const[dog,setDog]=useState()
+    const[cash,setCash]=useState()
+    const[vchs,setVchs]=useState()
+    const[dor,setDor]=useState()
+    const[amt,setAmt]=useState()
+    const[hcl,setHcl]=useState()
+    const[sbi,setSbi]=useState()
+    const[rly,setRly]=useState()
+	const[rad,setRad]=useState()
+	const[crnote,setCrnote]=useState()
+    const[dod,setDod]=useState()
+    const[ack,setAck]=useState()
+    const userid = userData.sid
+    const scode = userData.scd
+    const registerid = 18
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post(`${process.env.REACT_APP_CONFIG}/addCrpRegisters`, {
+            tableName,oname,slno,dog,cash,vchs,dor,amt,hcl,sbi,rly,rad,crnote,dod,ack,scode, registerid
+        })
+            .then(res => {
+                toast({
+                    description: "Successfully Added",
+                    duration: 2000,
+                    position: "top-right"
+                })
+            })
+            .catch(err => {
+                toast({
+                    description: "Error In Fetching Registers",
+                    duration: 2000,
+                    position: "top-right"
+                })
+            })
+    }
+
+    return(
+        <form onSubmit={handleSubmit}>
+            <TextField
+                required
+                autoComplete="off"
+                type="number"
+                label="Sl No."
+                name="Sl No."
+                value={slno}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setSlno(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="date"
+                label="Date of cash generated"
+                name="Date of cash generated"
+                value={dog}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setDog(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Cash "
+                name="Cash"
+                value={cash}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setCash(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="VCHs"
+                name="VCHs"
+                value={vchs}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setVchs(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="date"
+                label="Date of Remitance"
+                name="Date of Remitance"
+                value={dor}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setDor(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Amount Remitance"
+                name="Amount Remitance"
+                value={amt}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setAmt(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="HCl No. Part-A"
+                name="HCl No. Part-A"
+                value={hcl}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setHcl(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="Text"
+                label="SBI Challan Number"
+                name="SBI Challan Number"
+                value={sbi}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setSbi(e.target.value)}
+            />
+			<TextField
+                required
+                autoComplete="off"
+                type="number"
+                label="Cash Hand over By Rly Staff"
+                name="Cash Hand over By Rly Staff"
+                value={rly}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setRly(e.target.value)}
+            />    
+			<TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Cash Received By Radient Staff"
+                name="Cash Received By Radient Staff"
+                value={rad}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setRad(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="CR note Number"
+                name="CR note Number"
+                value={crnote}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setCrnote(e.target.value)}
+            />  
+            <TextField
+                required
+                autoComplete="off"
+                type="date"
+                label="Date of dispatch of CR note"
+                name="Date of dispatch of CR note"
+                value={dod}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setDod(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="CR Note acknowledgement received"
+                name="CR Note acknowledgement received"
+                value={ack}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setAck(e.target.value)}
+            />   
+            <DialogActions>
+                <Button style={{backgroundColor: '#202950', color: 'white'}} variant="contained">
+                    Cancel
+                </Button>
+                <Button type="submit" style={{backgroundColor: '#202950', color: 'white', marginRight:'20.5px'}} variant="contained">
+                    Add 
+                </Button>
+            </DialogActions>
+        </form>
+    )
+ }   
+
+export const MvrUTSForm=({oname}) => {
+        const toast = useToast()
+        const userData = decodeSessionStorage().payload;
+        const tableName = 'mvr'
+        const[slno,setSlno]=useState()
+        const[frm,setFrm]=useState()
+        const[too,setToo]=useState()
+        const[commencingdate,setCommencingdate]=useState()
+        const[issue,setIssue]=useState()
+        const[closingdate,setClosingdate]=useState()
+        const userid = userData.sid
+        const scode = userData.scd
+        const registerid = 19
+    
+    
+        const handleSubmit = (e) => {
+            e.preventDefault()
+            axios.post(`${process.env.REACT_APP_CONFIG}/addMvrRegisters`, {
+                tableName,oname,slno,frm,too,commencingdate,issue,closingdate,scode, registerid
+            })
+                .then(res => {
+                    toast({
+                        description: "Successfully Added",
+                        duration: 2000,
+                        position: "top-right"
+                    })
+                })
+                .catch(err => {
+                    toast({
+                        description: "Error In Fetching Registers",
+                        duration: 2000,
+                        position: "top-right"
+                    })
+                })
+        }
+    
+        return(
+            <form onSubmit={handleSubmit}>
+                <TextField
+                    required
+                    autoComplete="off"
+                    type="number"
+                    label="Sl No."
+                    name="Sl No."
+                    value={slno}
+                    style={{marginRight: '40px',marginBottom: '20px'}}
+                    onChange={e => setSlno(e.target.value)}
+                />
+                <TextField
+                    required
+                    autoComplete="off"
+                    type="text"
+                    label="Ft/Bpt number from"
+                    name="Ft/Bpt number from"
+                    value={frm}
+                    style={{marginRight: '40px',marginBottom: '20px'}}
+                    onChange={e => setFrm(e.target.value)}
+                    InputLabelProps={{ shrink: true }}
+                />
+                <TextField
+                    required
+                    autoComplete="off"
+                    type="text"
+                    label="Ft/Bpt number to "
+                    name="Ft/Bpt number to"
+                    value={too}
+                    style={{marginRight: '40px',marginBottom: '20px'}}
+                    onChange={e => setToo(e.target.value)}
+                  
+                />
+                <TextField
+                    required
+                    autoComplete="off"
+                    type="date"
+                    label="commencing date"
+                    name="commencing date"
+                    value={commencingdate}
+                    style={{marginRight: '40px',marginBottom: '20px'}}
+                    onChange={e => setCommencingdate(e.target.value)}
+                    InputLabelProps={{ shrink: true }}
+                />
+                <TextField
+                    required
+                    autoComplete="off"
+                    type="text"
+                    label="Issued To"
+                    name="Issued To"
+                    value={issue}
+                    style={{marginRight: '40px',marginBottom: '20px'}}
+                    onChange={e => setIssue(e.target.value)}
+                    
+                />
+                <TextField
+                    required
+                    autoComplete="off"
+                    type="date"
+                    label="Closing Date"
+                    name="Closing Date"
+                    value={closingdate}
+                    style={{marginRight: '40px',marginBottom: '20px'}}
+                    onChange={e => setClosingdate(e.target.value)}
+                />
+                
+                <DialogActions>
+                    <Button style={{backgroundColor: '#202950', color: 'white'}} variant="contained">
+                        Cancel
+                    </Button>
+                    <Button type="submit" style={{backgroundColor: '#202950', color: 'white', marginRight:'20.5px'}} variant="contained">
+                        Add 
+                    </Button>
+                </DialogActions>
+            </form>
+        )
+ }   
+    
+ export const TrrUTSForm=({oname}) => {
+    const toast = useToast()
+    const userData = decodeSessionStorage().payload;
+    const tableName = 'trr'
+    const[slno,setSlno]=useState()
+    const[rollno,setRollno]=useState()
+    const[commencingnumber,setCommencingnumber]=useState()
+    const[closingnumber,setClosingnumber]=useState()
+    const[counterno,setCounterno]=useState()
+    const[date,setDate]=useState()
+    const[user,setUser]=useState()
+    const[supervisorid,setSupervisorid]=useState()
+    const userid = userData.sid
+    const scode = userData.scd
+    const registerid = 20
+   
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post(`${process.env.REACT_APP_CONFIG}/addTrrRegisters`, {
+            tableName,oname,slno,rollno,commencingnumber,closingnumber,counterno,date,user,supervisorid,scode, registerid
+        })
+            .then(res => {
+                toast({
+                    description: "Successfully Added",
+                    duration: 2000,
+                    position: "top-right"
+                })
+            })
+            .catch(err => {
+                toast({
+                    description: "Error In Fetching Registers",
+                    duration: 2000,
+                    position: "top-right"
+                })
+            })
+    }
+
+    return(
+        <form onSubmit={handleSubmit}>
+            <TextField
+                required
+                autoComplete="off"
+                type="number"
+                label="Sl No."
+                name="Sl No."
+                value={slno}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setSlno(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Roll No"
+                name="Roll No"
+                value={rollno}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setRollno(e.target.value)}
+                />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Commencing Number "
+                name="Commencing Number"
+                value={commencingnumber}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setCommencingnumber(e.target.value)}
+                
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Closing Number "
+                name="Closing Number"
+                value={closingnumber}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setClosingnumber(e.target.value)}
+               
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Counter Number"
+                name="Counter Number"
+                value={counterno}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setCounterno(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="date"
+                label="Date"
+                name="Date"
+                value={date}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setDate(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="User Id"
+                name="User Id"
+                value={user}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e =>setUser(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Supervisor Id"
+                name="Supervisor Id"
+                value={supervisorid}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e =>setSupervisorid(e.target.value)}
+            />
+            
+            <DialogActions>
+                <Button style={{backgroundColor: '#202950', color: 'white'}} variant="contained">
+                    Cancel
+                </Button>
+                <Button type="submit" style={{backgroundColor: '#202950', color: 'white', marginRight:'20.5px'}} variant="contained">
+                    Add 
+                </Button>
+            </DialogActions>
+        </form>
+    )
+}   
+export const EarUTSForm=({oname}) => {
+    const toast = useToast()
+    const userData = decodeSessionStorage().payload;
+    const tableName = 'ear'
+    const[slno,setSlno]=useState()
+    const[errorsheetno,setErrorsheetno]=useState()
+    const[totalamount,setTotalamount]=useState()
+    const[specialcredit,setSpecialcredit]=useState()
+    const[amountpaid,setAmountpaid]=useState()
+    const[nameofstaff,setNameofstaff]=useState()
+    const[moneyreceipt,setMoneyreceipt]=useState()
+    const[date,setDate]=useState()
+    const[remarks,setRemarks]=useState()
+    const userid = userData.sid
+    const scode = userData.scd
+    const registerid = 22
+   
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post(`${process.env.REACT_APP_CONFIG}/addEarRegisters`, {
+            tableName,oname,slno,errorsheetno,totalamount,specialcredit,amountpaid,nameofstaff,moneyreceipt,date,remarks,scode, registerid
+        })
+            .then(res => {
+                toast({
+                    description: "Successfully Added",
+                    duration: 2000,
+                    position: "top-right"
+                })
+            })
+            .catch(err => {
+                toast({
+                    description: "Error In Fetching Registers",
+                    duration: 2000,
+                    position: "top-right"
+                })
+            })
+    }
+
+    return(
+        <form onSubmit={handleSubmit}>
+            <TextField
+                required
+                autoComplete="off"
+                type="number"
+                label="Sl No."
+                name="Sl No."
+                value={slno}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setSlno(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label=" Error Sheet No"
+                name="Error Sheet No"
+                value={errorsheetno}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setErrorsheetno(e.target.value)}
+                />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Total Amount "
+                name="Total Amount"
+                value={totalamount}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setTotalamount(e.target.value)}
+                
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Special Credit "
+                name="Special Credit"
+                value={specialcredit}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setSpecialcredit(e.target.value)}
+               
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Amount Paid"
+                name="Amount Paid"
+                value={amountpaid}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setAmountpaid(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Name of Staff"
+                name="Name of Staff"
+                value={nameofstaff}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setNameofstaff(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Money Receipt"
+                name="Money Receipt"
+                value={moneyreceipt}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e =>setMoneyreceipt(e.target.value)}
+            />
+            <TextField
+            required
+            autoComplete="off"
+            type="date"
+            label="Date"
+            name="Date"
+            value={date}
+            style={{marginRight: '40px',marginBottom: '20px'}}
+            onChange={e => setDate(e.target.value)}
+            InputLabelProps={{ shrink: true }}
+        />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label=" Remarks"
+                name="Remarks"
+                value={remarks}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e =>setRemarks(e.target.value)}
+            />
+            
+            <DialogActions>
+                <Button style={{backgroundColor: '#202950', color: 'white'}} variant="contained">
+                    Cancel
+                </Button>
+                <Button type="submit" style={{backgroundColor: '#202950', color: 'white', marginRight:'20.5px'}} variant="contained">
+                    Add 
+                </Button>
+            </DialogActions>
+        </form>
+    )
+}   
+
+export const AtvmUTSForm=({oname}) => {
+    const toast = useToast()
+    const userData = decodeSessionStorage().payload;
+    const tableName = 'atvm'
+    const[slno,setSlno]=useState()
+    const[rollno,setRollno]=useState()
+    const[commencingnumber,setCommencingnumber]=useState()
+    const[closingnumber,setClosingnumber]=useState()
+    const[counterno,setCounterno]=useState()
+    const[date,setDate]=useState()
+    const[user,setUser]=useState()
+    const[supervisorid,setSupervisorid]=useState()
+    const userid = userData.sid
+    const scode = userData.scd
+    const registerid = 21
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post(`${process.env.REACT_APP_CONFIG}/addAtvmRegisters`, {
+            tableName,oname,slno,rollno,commencingnumber,closingnumber,counterno,date,user,supervisorid,scode, registerid
+        })
+            .then(res => {
+                toast({
+                    description: "Successfully Added",
+                    duration: 2000,
+                    position: "top-right"
+                })
+            })
+            .catch(err => {
+                toast({
+                    description: "Error In Fetching Registers",
+                    duration: 2000,
+                    position: "top-right"
+                })
+            })
+    }
+
+    return(
+        <form onSubmit={handleSubmit}>
+            <TextField
+                required
+                autoComplete="off"
+                type="number"
+                label="Sl No."
+                name="Sl No."
+                value={slno}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setSlno(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Roll No"
+                name="Roll No"
+                value={rollno}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setRollno(e.target.value)}
+                />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Commencing Number "
+                name="Commencing Number"
+                value={commencingnumber}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setCommencingnumber(e.target.value)}
+                
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Closing Number "
+                name="Closing Number"
+                value={closingnumber}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setClosingnumber(e.target.value)}
+               
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Counter Number"
+                name="Counter Number"
+                value={counterno}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setCounterno(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="date"
+                label="Date"
+                name="Date"
+                value={date}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setDate(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="User Id"
+                name="User Id"
+                value={user}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e =>setUser(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Supervisor Id"
+                name="Supervisor Id"
+                value={supervisorid}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e =>setSupervisorid(e.target.value)}
+            />
+            
+            <DialogActions>
+                <Button style={{backgroundColor: '#202950', color: 'white'}} variant="contained">
+                    Cancel
+                </Button>
+                <Button type="submit" style={{backgroundColor: '#202950', color: 'white', marginRight:'20.5px'}} variant="contained">
+                    Add 
+                </Button>
+            </DialogActions>
+        </form>
+    )
+}
+
+export const MvrForm=({oname}) => {
+    const toast = useToast()
+    const userData = decodeSessionStorage().payload;
+    const tableName = 'mvr'
+    const[slno,setSlno]=useState()
+    const[frm,setFrm]=useState()
+    const[too,setToo]=useState()
+    const[commencingdate,setCommencingdate]=useState()
+    const[issue,setIssue]=useState()
+    const[closingdate,setClosingdate]=useState()
+    const userid = userData.sid
+    const scode = userData.scd
+    const registerid = 23
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post(`${process.env.REACT_APP_CONFIG}/addMvrRegisters`, {
+            tableName,oname,slno,frm,too,commencingdate,issue,closingdate,scode, registerid
+        })
+            .then(res => {
+                toast({
+                    description: "Successfully Added",
+                    duration: 2000,
+                    position: "top-right"
+                })
+            })
+            .catch(err => {
+                toast({
+                    description: "Error In Fetching Registers",
+                    duration: 2000,
+                    position: "top-right"
+                })
+            })
+    }
+
+    return(
+        <form onSubmit={handleSubmit}>
+            <TextField
+                required
+                autoComplete="off"
+                type="number"
+                label="Sl No."
+                name="Sl No."
+                value={slno}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setSlno(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Ft/Bpt number from"
+                name="Ft/Bpt number from"
+                value={frm}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setFrm(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Ft/Bpt number to "
+                name="Ft/Bpt number to"
+                value={too}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setToo(e.target.value)}
+              
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="date"
+                label="commencing date"
+                name="commencing date"
+                value={commencingdate}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setCommencingdate(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Issued To"
+                name="Issued To"
+                value={issue}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setIssue(e.target.value)}
+                
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="date"
+                label="Closing Date"
+                name="Closing Date"
+                value={closingdate}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setClosingdate(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            
+            <DialogActions>
+                <Button style={{backgroundColor: '#202950', color: 'white'}} variant="contained">
+                    Cancel
+                </Button>
+                <Button type="submit" style={{backgroundColor: '#202950', color: 'white', marginRight:'20.5px'}} variant="contained">
+                    Add 
+                </Button>
+            </DialogActions>
+        </form>
+    )
+}  
+
+export const GbrForm=({oname}) => {
+    const toast = useToast()
+    const userData = decodeSessionStorage().payload;
+    const tableName = 'gbr'
+    const[slno,setSlno]=useState()
+    const[dates,setDates]=useState()
+    const[address,setAddress]=useState()
+    const[trainno,setTrainno]=useState()
+    const[doj,setDoj]=useState()
+    const[frm,setFrm]=useState()
+    const[too,setToo]=useState()
+    const[noofpass,setNoofpass]=useState()
+    const[classs,setClasss]=useState()
+    const[purpose,setPurpose]=useState()
+    const[authority,setAuthority]=useState()
+    const userid = userData.sid
+    const scode = userData.scd
+    const registerid = 23
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post(`${process.env.REACT_APP_CONFIG}/addGbrRegisters`, {
+            tableName,oname,slno,frm,too,dates,address,trainno,doj,noofpass,classs,purpose,authority,scode, registerid
+        })
+            .then(res => {
+                toast({
+                    description: "Successfully Added",
+                    duration: 2000,
+                    position: "top-right"
+                })
+            })
+            .catch(err => {
+                toast({
+                    description: "Error In Fetching Registers",
+                    duration: 2000,
+                    position: "top-right"
+                })
+            })
+    }
+
+    return(
+        <form onSubmit={handleSubmit}>
+            <TextField
+                required
+                autoComplete="off"
+                type="number"
+                label="Sl No."
+                name="Sl No."
+                value={slno}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setSlno(e.target.value)}
+            />
+            
+            <TextField
+                required
+                autoComplete="off"
+                type="date"
+                label=" Date"
+                name=" Date"
+                value={dates}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setDates(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Address of passenger Mob. No"
+                name="Address of passenger Mob. No"
+                value={address}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setAddress(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Train No"
+                name="Train No"
+                value={trainno}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setTrainno(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="date"
+                label="Date of Journey"
+                name="Date of Journey"
+                value={doj}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setDoj(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="From"
+                name="From"
+                value={frm}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setFrm(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="To "
+                name="To"
+                value={too}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setToo(e.target.value)}
+              
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="No. of Passengers"
+                name="No. of Passengers"
+                value={noofpass}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setNoofpass(e.target.value)}
+                InputLabelProps={{ shrink: true }}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Class of Journey"
+                name="Class of Journey"
+                value={classs}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setClasss(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Journey purpose"
+                name="Journey purpose"
+                value={purpose}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setPurpose(e.target.value)}
+            />
+            <TextField
+                required
+                autoComplete="off"
+                type="text"
+                label="Authority"
+                name="Authority"
+                value={authority}
+                style={{marginRight: '40px',marginBottom: '20px'}}
+                onChange={e => setAuthority(e.target.value)}
+            />
+            <DialogActions>
+                <Button type="" style={{backgroundColor: '#202950', color: 'white'}} variant="contained">
+                    Cancel
+                </Button>
+                <Button type="submit" style={{backgroundColor: '#202950', color: 'white', marginRight:'20.5px'}} variant="contained">
+                    Add 
+                </Button>
+            </DialogActions>
+        </form>
+    )
+} 

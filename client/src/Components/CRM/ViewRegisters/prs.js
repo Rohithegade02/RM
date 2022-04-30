@@ -9,7 +9,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import { GrFormView } from 'react-icons/gr'
 import { decodeSessionStorage } from '../../../helpers/auth.helpers';
-import { BbrTable, FrTable, LogTable, MmrTable, NcrTable, NitTable, PcdTable, SctTable, TsiTable, WleTable } from './registersList'
+import { BbrTable, FrTable, GbrTable, LogTable, MmrTable, NcrTable, NitTable, PcdTable, SctTable, TsiTable, WleTable } from './registersList'
 
 function PRS({oname}){
     const userData = decodeSessionStorage().payload;
@@ -57,20 +57,18 @@ function PRS({oname}){
         setSelectedRegister()
     }
 
-
-
     return(
         <div  style={{width: '90%'}}>
         <MaterialTable
                     title="Registers"
                     columns={[
-                        { title: 'Register Name', field: 'regname', cellStyle: {textAlign: 'center'}, headerStyle: {textAlign: 'center'} },
+                        { title: 'Register Name ', field: 'regname', cellStyle: {textAlign: 'center',fontSize:'22px',fontWeight:'bold'} , headerStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold',color:'#05227B'} },
                         {
                             title: 'View',
                             field: 'internal_action',
-                            cellStyle: {textAlign: 'center'},
+                            cellStyle: {textAlign: 'center',fontSize:'22px',fontWeight:'bold'},
                             sorting: false,
-                            headerStyle: {textAlign: 'center'},
+                            headerStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold',color:'#05227B'},
                             render: (rowData) =>
                                 rowData && (
                                 <button
@@ -107,7 +105,7 @@ function PRS({oname}){
                     { selectedRegister && selectedRegister.regid === '15' ? <BbrTable update={update} setUpdate={setUpdate} data={registerLogs} /> : null}
                     { selectedRegister && selectedRegister.regid === '16' ? <NcrTable update={update} setUpdate={setUpdate} data={registerLogs} /> : null}
                     { selectedRegister && selectedRegister.regid === '17' ? <WleTable update={update} setUpdate={setUpdate} data={registerLogs} /> : null}
-
+                    { selectedRegister && selectedRegister.regid === '23' ? <GbrTable update={update} setUpdate={setUpdate} data={registerLogs} /> : null}
                 </DialogContent>
             </Dialog>
         </div>

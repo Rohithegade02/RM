@@ -64,13 +64,13 @@ function PRS(){
         <MaterialTable
                     title="Registers"
                     columns={[
-                        { title: 'Register Name', field: 'regname', cellStyle: {textAlign: 'center'}, headerStyle: {textAlign: 'center'} },
+                        { title: 'Register Name ', field: 'regname', cellStyle: {textAlign: 'center',fontSize:'22px',fontWeight:'bold'} , headerStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold',color:'#05227B'} },
                         {
                             title: 'View',
                             field: 'internal_action',
-                            cellStyle: {textAlign: 'center'},
+                            cellStyle: {textAlign: 'center',fontSize:'22px',fontWeight:'bold'},
                             sorting: false,
-                            headerStyle: {textAlign: 'center'},
+                            headerStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold',color:'#05227B'},
                             render: (rowData) =>
                                 rowData && (
                                 <button

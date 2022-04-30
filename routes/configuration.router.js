@@ -27,7 +27,19 @@ const {
     registerTsiDeleteController,
     registerBbrDeleteController,
     registerNcrDeleteController,
-    registerWleDeleteController
+    registerWleDeleteController,
+    addCrpRegisters,
+    registerCrpDeleteController,
+    addMvrRegisters,
+    registerMvrDeleteController,
+    addTrrRegisters,
+    registerTrrDeleteController,
+    addEarRegisters,
+    registerEarDeleteController,
+    addAtvmRegisters,
+    registerAtvmDeleteController,
+    addGbrRegisters,
+    registerGbrDeleteController
 } = require('../controllers/configuration.controller');
 
 const {
@@ -43,8 +55,14 @@ router.post('/deleteMmrRegister', registerMmrDeleteController);
 router.post('/deleteFrRegister', registerFrDeleteController);
 router.post('/deleteTsiRegister', registerTsiDeleteController);
 router.post('/deleteBbrRegister', registerBbrDeleteController);
+router.post('/deleteCrpRegister', registerCrpDeleteController);
+router.post('/deleteMvrRegister', registerMvrDeleteController);
+router.post('/deleteTrrRegister', registerTrrDeleteController);
+router.post('/deleteAtvmRegister', registerAtvmDeleteController);
+router.post('/deleteEarRegister', registerEarDeleteController);
 router.post('/deleteNcrRegister', registerNcrDeleteController);
 router.post('/deleteWleRegister', registerWleDeleteController);
+router.post('/deleteGbrRegister', registerGbrDeleteController);
 router.post('/getAdminEmployees', fetchAdminEmployees);
 router.post('/getSupervisorEmployees',fetchSupervisorEmployees);
 router.post('/getRegisters', fetchRegistersList);
@@ -60,5 +78,10 @@ router.post('/addBbrRegisters', addBbrRegisters);
 router.post('/addSctRegisters', addSctRegisters);
 router.post('/addFrRegisters', addFrRegisters);
 router.post('/addtsiRegisters', addTsiRegisters);
-
+router.post('/addCrpRegisters', addCrpRegisters);
+router.post('/addMvrRegisters', addMvrRegisters);
+router.post('/addTrrRegisters', addTrrRegisters);
+router.post('/addEarRegisters', addEarRegisters);
+router.post('/addAtvmRegisters', addAtvmRegisters);
+router.post('/addGbrRegisters', addGbrRegisters);
 module.exports = router;

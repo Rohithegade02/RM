@@ -16,7 +16,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import axios from 'axios';
 
 import { decodeSessionStorage } from '../../../helpers/auth.helpers';
-import Loading from '../../Loading';
+
 
 const useStyles = makeStyles((theme) => ({
     userTable: {
@@ -50,13 +50,9 @@ function AddSupervisor() {
     const [open, setOpen] = useState(false);
     const classes = useStyles();
     const toast = useToast();
-    const [rawData, setRawData] = useState([]);
-    const [cityData, setCityData] = useState([]);
     const [firstname, setFirstName] = useState("");
     const [lastname, setLastName] = useState("");
-    const [email_new, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [mobile, setMobile] = useState("");
     const [role, setRole] = useState("");
     const [newsid,setNewsid]= useState("");
     const [oname, setOname] = useState("");
@@ -168,7 +164,7 @@ function AddSupervisor() {
                         type="text"
                         name="sid"
                         autoComplete="off"
-                        style={{marginRight: '40px',marginBottom: '20px'}}
+                        style={{marginRight: '40px'}}
                         onChange={e=>setNewsid(e.target.value)}
                     />
                 </div>

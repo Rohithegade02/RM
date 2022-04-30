@@ -8,7 +8,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import {  GrAdd } from 'react-icons/gr'
 import { decodeSessionStorage } from '../../../helpers/auth.helpers';
-import { BbrForm,  FrForm,  LogForm, MmrForm, NcrForm, NitForm,  PcdForm,  SctForm,  TsiForm,  WleForm } from './registersList'
+import { BbrForm,  FrForm,  GbrForm,  LogForm, MmrForm, MvrForm, NcrForm, NitForm,  PcdForm,  SctForm,  TsiForm,  WleForm } from './registersList'
 
 function PRS({oname}){
     const userData = decodeSessionStorage().payload;
@@ -62,13 +62,13 @@ function PRS({oname}){
         <MaterialTable
                     title="Registers"
                     columns={[
-                        { title: 'Register Name', field: 'regname', cellStyle: {textAlign: 'center'}, headerStyle: {textAlign: 'center'} },
+                        { title: 'Register Name', field: 'regname', cellStyle: {textAlign: 'center',fontSize:'22px',fontWeight:'bold'}, headerStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold',color:'#05227B'} },
                         {
                             title: 'Add',
                             field: 'internal_action',
-                            cellStyle: {textAlign: 'center'},
+                            cellStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold'},
                             sorting: false,
-                            headerStyle: {textAlign: 'center'},
+                            headerStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold',color:'#05227B'},
                             render: (rowData) =>
                                 rowData && (
                                 <button
@@ -105,7 +105,7 @@ function PRS({oname}){
                     { selectedRegister && selectedRegister.regid === '15' ? <BbrForm oname={oname} /> : null}
                     { selectedRegister && selectedRegister.regid === '16' ? <NcrForm oname={oname}/> : null}
                     { selectedRegister && selectedRegister.regid === '17' ? <WleForm oname={oname} /> : null}
-
+                    { selectedRegister && selectedRegister.regid === '23' ? <GbrForm oname={oname} /> : null}
                 </DialogContent>
             </Dialog>
         </div>

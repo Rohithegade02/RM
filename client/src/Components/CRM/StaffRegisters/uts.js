@@ -62,37 +62,37 @@ function UTS(){
     return(
         <div  style={{width: '90%'}}>
         <MaterialTable
-                    title="Registers"
-                    columns={[
-                        { title: 'Register Name', field: 'regname', cellStyle: {textAlign: 'center'}, headerStyle: {textAlign: 'center'} },
-                        {
-                            title: 'View',
-                            field: 'internal_action',
-                            cellStyle: {textAlign: 'center'},
-                            sorting: false,
-                            headerStyle: {textAlign: 'center'},
-                            render: (rowData) =>
-                                rowData && (
-                                <button
-                                    color="secondary"
-                                    onClick={() => {
-                                        setOpenView(true)
-                                        setSelectedRegister(rowData)
-                                    }}
-                                >
-                                    <Icon component={GrFormView} />
-                                </button>
-                            )
-                        }
-                    ]}
-                    data={ registers }
-                    options={{
-                        headerStyle: {
-                            backgroundColor: '#EEE',
-                        }
-                    }}
-                    style={{padding: '15px 30px', margin: '30px 0'}}
-            />
+        title="Registers"
+        columns={[
+            { title: 'Register Name ', field: 'regname', cellStyle: {textAlign: 'center',fontSize:'22px',fontWeight:'bold'} , headerStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold',color:'#05227B'} },
+            {
+                title: 'View',
+                field: 'internal_action',
+                cellStyle: {textAlign: 'center',fontSize:'22px',fontWeight:'bold'},
+                sorting: false,
+                headerStyle: {textAlign: 'center',fontSize:'25px',fontWeight:'bold',color:'#05227B'},
+                render: (rowData) =>
+                    rowData && (
+                    <button
+                        color="secondary"
+                        onClick={() => {
+                            setOpenView(true)
+                            setSelectedRegister(rowData)
+                        }}
+                    >
+                        <Icon component={GrFormView} />
+                    </button>
+                )
+            }
+        ]}
+        data={ registers }
+        options={{
+            headerStyle: {
+                backgroundColor: '#EEE',
+            }
+        }}
+        style={{padding: '15px 30px', margin: '30px 0'}}
+/>
             
             <Dialog open={openView} fullWidth maxWidth='xl' onClose={() => onViewClose()}>
                 <DialogTitle style={{marginTop: '20px'}}>{selectedRegister ? selectedRegister.regname : null}</DialogTitle>
